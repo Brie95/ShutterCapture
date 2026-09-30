@@ -27,8 +27,8 @@ jobs:
           cp quartz.config.ts quartz.layout.ts quartz
           cp -rf content/* quartz/content/
           # Copy .quartz plugins directory if it exists
-       if [ -d .quartz ]; then
-         cp -rf .quartz quartz/.quartz
+          if [ -d .quartz ]; then
+            cp -rf .quartz quartz/.quartz
        fi
       - name: Setup Node.js
         uses: actions/setup-node@v4
